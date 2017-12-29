@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="volado" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header.png" translatesAutoresizingMaskIntoConstraints="NO" id="6cD-yi-6P4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="XBt-bh-eyT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XBt-bh-eyT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XBt-bh-eyT"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondoVoladoI.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lmp-xj-wwr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monedaCara.png" translatesAutoresizingMaskIntoConstraints="NO" id="v32-ni-NfA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="v32-ni-NfA" secondAttribute="height" multiplier="1:1" id="Fa7-aY-eX0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Fa7-aY-eX0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Fa7-aY-eX0"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPN-xA-5Vz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YPN-xA-5Vz" secondAttribute="height" multiplier="25:6" id="zch-pI-ujl"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" image="buttonVolado.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zch-pI-ujl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="zch-pI-ujl"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="hecharVolado:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qbb-9Z-Wde"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lmp-xj-wwr" firstAttribute="top" secondItem="6cD-yi-6P4" secondAttribute="bottom" id="37r-eu-hgI"/>
+                            <constraint firstItem="YPN-xA-5Vz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="82" id="NTY-b9-F9H"/>
+                            <constraint firstItem="Lmp-xj-wwr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="PtY-YH-9u3"/>
+                            <constraint firstAttribute="trailing" secondItem="YPN-xA-5Vz" secondAttribute="trailing" constant="82" id="Spf-qt-hsw"/>
+                            <constraint firstItem="6cD-yi-6P4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="VST-fz-P89"/>
+                            <constraint firstItem="v32-ni-NfA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="82" id="aha-vZ-5Q2"/>
+                            <constraint firstAttribute="bottom" secondItem="Lmp-xj-wwr" secondAttribute="bottom" id="bdm-OP-SCH"/>
+                            <constraint firstAttribute="trailing" secondItem="Lmp-xj-wwr" secondAttribute="trailing" id="eqD-BO-qfB"/>
+                            <constraint firstAttribute="trailing" secondItem="6cD-yi-6P4" secondAttribute="trailing" id="f9x-HB-uXb"/>
+                            <constraint firstAttribute="bottom" secondItem="YPN-xA-5Vz" secondAttribute="bottom" constant="87" id="flG-v3-spw"/>
+                            <constraint firstItem="6cD-yi-6P4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="g0H-YB-xHl"/>
+                            <constraint firstItem="v32-ni-NfA" firstAttribute="top" secondItem="6cD-yi-6P4" secondAttribute="bottom" constant="79" id="gfX-pC-XWH"/>
+                            <constraint firstAttribute="trailing" secondItem="v32-ni-NfA" secondAttribute="trailing" constant="82" id="vrt-3G-FBc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6cD-yi-6P4"/>
+                                <exclude reference="Lmp-xj-wwr"/>
+                                <exclude reference="v32-ni-NfA"/>
+                                <exclude reference="YPN-xA-5Vz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NTY-b9-F9H"/>
+                                <exclude reference="Spf-qt-hsw"/>
+                                <exclude reference="flG-v3-spw"/>
+                                <exclude reference="VST-fz-P89"/>
+                                <exclude reference="f9x-HB-uXb"/>
+                                <exclude reference="g0H-YB-xHl"/>
+                                <exclude reference="37r-eu-hgI"/>
+                                <exclude reference="PtY-YH-9u3"/>
+                                <exclude reference="bdm-OP-SCH"/>
+                                <exclude reference="eqD-BO-qfB"/>
+                                <exclude reference="aha-vZ-5Q2"/>
+                                <exclude reference="gfX-pC-XWH"/>
+                                <exclude reference="vrt-3G-FBc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6cD-yi-6P4"/>
+                                <include reference="Lmp-xj-wwr"/>
+                                <include reference="v32-ni-NfA"/>
+                                <include reference="YPN-xA-5Vz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="NTY-b9-F9H"/>
+                                <include reference="Spf-qt-hsw"/>
+                                <include reference="flG-v3-spw"/>
+                                <include reference="VST-fz-P89"/>
+                                <include reference="f9x-HB-uXb"/>
+                                <include reference="g0H-YB-xHl"/>
+                                <include reference="37r-eu-hgI"/>
+                                <include reference="PtY-YH-9u3"/>
+                                <include reference="bdm-OP-SCH"/>
+                                <include reference="eqD-BO-qfB"/>
+                                <include reference="aha-vZ-5Q2"/>
+                                <include reference="gfX-pC-XWH"/>
+                                <include reference="vrt-3G-FBc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="boton" destination="YPN-xA-5Vz" id="tif-fr-xm2"/>
+                        <outlet property="moneda" destination="v32-ni-NfA" id="TAV-6C-dgU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439.5" y="404"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonVolado.png" width="250" height="60"/>
+        <image name="fondoVoladoI.png" width="450" height="750"/>
+        <image name="header.png" width="450" height="30"/>
+        <image name="monedaCara.png" width="250" height="250"/>
+    </resources>
+</document>
